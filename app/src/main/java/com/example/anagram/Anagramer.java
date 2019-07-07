@@ -8,7 +8,7 @@ import java.util.List;
 
     private final List<Integer> digitsMap = new ArrayList<>();
 
-    public String anagramIt(CharSequence s) {
+     String anagramIt(CharSequence s) {
         final String[] stringArrays = s.toString().split(" ");
         final StringBuilder sb = new StringBuilder();
         for (String stringArray : stringArrays) {
@@ -28,6 +28,6 @@ import java.util.List;
             sb.append(" ");
             digitsMap.clear();
         }
-        return sb.toString();
+        return sb.toString().trim();
     }
 }
